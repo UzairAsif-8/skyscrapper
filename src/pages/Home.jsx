@@ -71,7 +71,7 @@ export default function Home() {
                   <FiArrowRight className="transition-transform duration-300 group-hover:translate-x-1" />
                 </Link>
                 <a
-                  href="tel:+18005550123"
+                  href="tel:+1(778) 723-7740."
                   className="btn-outline ripple-button inline-flex items-center gap-2 text-sm"
                 >
                   <FiPhoneCall className="text-red-500" />
