@@ -1,0 +1,478 @@
+@import "tailwindcss";
+@import "lenis/dist/lenis.css";
+
+@theme {
+  --font-sans: 'Poppins', system-ui, sans-serif;
+
+  --color-brand-primary: #b91c1c;
+  --color-brand-primaryDark: #7f1d1d;
+  --color-brand-accent: #f87171;
+  --color-brand-soft: #fef2f2;
+  --color-brand-midnight: #020617;
+
+  --shadow-brand-xl: 0 24px 80px rgba(185, 28, 28, 0.35);
+  --shadow-brand-soft: 0 18px 45px rgba(185, 28, 28, 0.18);
+
+  --radius-3xl: 1.75rem;
+}
+
+@utility bg-hero-gradient {
+  background-color: #ffffff;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+html {
+  overflow-x: hidden;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  overflow-x: hidden;
+  -webkit-tap-highlight-color: transparent;
+  @apply bg-white text-slate-900 antialiased;
+}
+
+a {
+  @apply underline-offset-4;
+}
+
+/* ── Glass panels ─────────────────────────────────────────── */
+
+.glass-panel {
+  @apply bg-white/60 backdrop-blur-xl border border-white/40 shadow-brand-soft;
+}
+
+.glass-panel-deep {
+  @apply bg-white/40 backdrop-blur-2xl border border-white/30 shadow-brand-xl;
+}
+
+/* ── Buttons ──────────────────────────────────────────────── */
+
+.btn-primary {
+  @apply inline-flex items-center justify-center rounded-full bg-gradient-to-r from-brand-primary to-red-500 px-5 py-2.5 sm:px-7 sm:py-3 text-xs sm:text-sm font-semibold text-white shadow-brand-soft hover:-translate-y-0.5 hover:shadow-brand-xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-accent focus-visible:ring-offset-2 focus-visible:ring-offset-white;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.3s ease;
+}
+.btn-primary:hover {
+  opacity: 0.92;
+}
+
+.btn-outline {
+  @apply inline-flex items-center justify-center rounded-full border border-red-200 bg-white/60 px-5 py-2.5 sm:px-7 sm:py-3 text-xs sm:text-sm font-semibold text-brand-primary shadow-sm backdrop-blur-sm hover:-translate-y-0.5 hover:border-red-400 hover:bg-white hover:shadow-lg;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease, background-color 0.3s ease;
+}
+
+.btn-glow {
+  @apply inline-flex items-center justify-center rounded-full bg-gradient-to-r from-brand-primary to-red-500 px-5 py-2.5 sm:px-7 sm:py-3 text-xs sm:text-sm font-semibold text-white hover:-translate-y-0.5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-accent focus-visible:ring-offset-2 focus-visible:ring-offset-white relative;
+  box-shadow:
+    0 0 20px rgba(239, 68, 68, 0.4),
+    0 0 60px rgba(239, 68, 68, 0.15),
+    0 12px 40px rgba(185, 28, 28, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.3s ease;
+}
+
+.btn-glow:hover {
+  opacity: 0.92;
+  box-shadow:
+    0 0 30px rgba(239, 68, 68, 0.55),
+    0 0 80px rgba(239, 68, 68, 0.25),
+    0 16px 50px rgba(185, 28, 28, 0.4);
+}
+
+/* ── Layout helpers ───────────────────────────────────────── */
+
+.section-padding {
+  @apply px-4 py-20 sm:px-6 lg:px-12 xl:px-20;
+  content-visibility: auto;
+  contain-intrinsic-size: auto 600px;
+}
+
+.section-max-width {
+  @apply mx-auto max-w-6xl;
+}
+
+.badge-soft {
+  @apply inline-flex items-center gap-2 rounded-full bg-red-50/80 px-3.5 py-1.5 text-xs font-medium text-brand-primary/90 ring-1 ring-red-100/80 backdrop-blur-sm;
+}
+
+/* ── Card styles ──────────────────────────────────────────── */
+
+.card-premium {
+  @apply bg-white/60 backdrop-blur-xl border border-white/40 shadow-brand-soft rounded-3xl hover:-translate-y-2 hover:shadow-brand-xl;
+  transition: transform 0.5s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+  will-change: transform;
+}
+
+.card-premium-glow {
+  @apply bg-white/60 backdrop-blur-xl border border-white/40 shadow-brand-soft rounded-3xl hover:-translate-y-2 hover:shadow-brand-xl;
+  transition: transform 0.5s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+  will-change: transform;
+}
+
+.card-premium-glow:hover {
+  box-shadow:
+    0 24px 80px rgba(185, 28, 28, 0.35),
+    0 0 40px rgba(248, 113, 113, 0.12);
+}
+
+/* ── Keyframe animations ──────────────────────────────────── */
+
+@keyframes float-slow {
+  0% { transform: translate3d(0, 0, 0); }
+  50% { transform: translate3d(0, -12px, 0); }
+  100% { transform: translate3d(0, 0, 0); }
+}
+
+@keyframes glow-pulse {
+  0%, 100% { opacity: 0.6; transform: scale(1); }
+  50% { opacity: 1; transform: scale(1.05); }
+}
+
+@keyframes fade-in-up {
+  0% { opacity: 0; transform: translateY(28px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fade-in {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+@keyframes gradient-shift {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+}
+
+.float-slow {
+  animation: float-slow 8s ease-in-out infinite;
+}
+
+.glow-pulse {
+  animation: glow-pulse 3.5s ease-in-out infinite;
+}
+
+.animate-fade-in-up {
+  animation: fade-in-up 0.7s ease-out both;
+}
+
+.animate-fade-in {
+  animation: fade-in 0.6s ease-out both;
+}
+
+.animate-shimmer {
+  background-size: 200% 100%;
+  animation: shimmer 3s linear infinite;
+}
+
+.animate-gradient-shift {
+  background-size: 200% 200%;
+  animation: gradient-shift 6s ease infinite;
+}
+
+/* ── Scroll reveal ────────────────────────────────────────── */
+
+.reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.7s ease-out, transform 0.7s ease-out;
+  will-change: opacity, transform;
+}
+
+.reveal.revealed {
+  opacity: 1;
+  transform: translateY(0);
+  will-change: auto;
+}
+
+/* ── Hero canvas ──────────────────────────────────────────── */
+
+.hero-canvas {
+  box-shadow: 0 25px 90px rgba(185, 28, 28, 0.32);
+}
+
+/* ── Hero gradient animated text ──────────────────────────── */
+
+.hero-gradient-text {
+  background: linear-gradient(
+    90deg,
+    #7f1d1d 0%,
+    #b91c1c 20%,
+    #f87171 45%,
+    #fca5a5 60%,
+    #f87171 75%,
+    #b91c1c 90%,
+    #7f1d1d 100%
+  );
+  background-size: 300% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: hero-text-shimmer 6s ease-in-out infinite;
+}
+
+@keyframes hero-text-shimmer {
+  0% { background-position: 100% 50%; }
+  50% { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
+}
+
+/* ── Form inputs (floating labels) ────────────────────────── */
+
+.input-floating-label {
+  position: relative;
+}
+
+.input-floating-label input,
+.input-floating-label textarea,
+.input-floating-label select {
+  @apply w-full rounded-2xl border border-slate-200/80 bg-white/50 backdrop-blur-sm px-4 pt-6 pb-2 text-sm text-slate-900 shadow-sm outline-none ring-0 transition-all duration-300 placeholder:text-transparent focus:border-red-400 focus:bg-white/80 focus:shadow-lg focus:shadow-red-500/10 focus:ring-2 focus:ring-red-100;
+}
+
+.input-floating-label label {
+  @apply pointer-events-none absolute left-4 top-2 origin-left text-[11px] font-medium text-red-500 transition-all duration-300;
+}
+
+.input-floating-label input:placeholder-shown + label,
+.input-floating-label textarea:placeholder-shown + label,
+.input-floating-label select:placeholder-shown + label {
+  @apply top-4 text-sm text-slate-400;
+}
+
+.input-floating-label input:focus + label,
+.input-floating-label textarea:focus + label,
+.input-floating-label select:focus + label {
+  @apply top-2 text-[11px] text-red-500;
+}
+
+.input-floating-label .helper-text {
+  @apply mt-1.5 text-[11px] text-slate-400;
+}
+
+/* ── Ripple button ────────────────────────────────────────── */
+
+.ripple-button {
+  position: relative;
+  overflow: hidden;
+}
+
+.ripple-button::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.75) 0, transparent 55%);
+  opacity: 0;
+  transform: scale(0.1);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.ripple-button:active::after {
+  opacity: 1;
+  transform: scale(1.4);
+}
+
+/* ── Image overlay gradient ───────────────────────────────── */
+
+.image-gradient-overlay {
+  position: relative;
+  overflow: hidden;
+}
+
+.image-gradient-overlay::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(15, 23, 42, 0.55) 0%,
+    rgba(15, 23, 42, 0.1) 40%,
+    transparent 70%
+  );
+  pointer-events: none;
+  transition: opacity 0.5s ease;
+}
+
+.image-gradient-overlay:hover::after {
+  opacity: 0.7;
+}
+
+/* ── Service card image swap ──────────────────────────────── */
+
+.service-card-images {
+  position: relative;
+  overflow: hidden;
+}
+
+.service-card-images .img-primary {
+  transition: opacity 0.6s ease, transform 0.6s ease;
+  will-change: transform, opacity;
+}
+
+.service-card-images .img-hover {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: opacity 0.6s ease, transform 0.6s ease;
+  transform: scale(1.08);
+  will-change: transform, opacity;
+}
+
+.service-card-images:hover .img-primary {
+  opacity: 0;
+  transform: scale(1.08);
+}
+
+.service-card-images:hover .img-hover {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* ── Section dividers ─────────────────────────────────────── */
+
+.section-divider {
+  @apply mx-auto h-px w-2/3 max-w-md;
+  background: linear-gradient(90deg, transparent, rgba(148, 163, 184, 0.35), transparent);
+}
+
+/* ── Blog masonry grid ───────────────────────────────────── */
+
+.blog-masonry-grid {
+  columns: 1;
+  column-gap: 1.5rem;
+}
+
+@media (min-width: 640px) {
+  .blog-masonry-grid {
+    columns: 2;
+  }
+}
+
+@media (min-width: 1024px) {
+  .blog-masonry-grid {
+    columns: 2;
+    column-gap: 2rem;
+  }
+}
+
+.blog-masonry-item {
+  break-inside: avoid;
+  margin-bottom: 1.5rem;
+}
+
+@media (min-width: 1024px) {
+  .blog-masonry-item {
+    margin-bottom: 2rem;
+  }
+}
+
+/* ── Blog page floating orbs ─────────────────────────────── */
+
+@keyframes float-orb-1 {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  33% { transform: translate(30px, -20px) scale(1.05); }
+  66% { transform: translate(-15px, 15px) scale(0.97); }
+}
+
+@keyframes float-orb-2 {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  33% { transform: translate(-25px, 20px) scale(0.96); }
+  66% { transform: translate(20px, -25px) scale(1.04); }
+}
+
+@keyframes float-orb-3 {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  50% { transform: translate(18px, -15px) scale(1.06); }
+}
+
+.animate-float-orb-1 {
+  animation: float-orb-1 18s ease-in-out infinite;
+}
+
+.animate-float-orb-2 {
+  animation: float-orb-2 22s ease-in-out infinite;
+}
+
+.animate-float-orb-3 {
+  animation: float-orb-3 15s ease-in-out infinite;
+}
+
+/* ── Horizontal scroll container ─────────────────────────── */
+
+.horizontal-scroll-container {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  -webkit-overflow-scrolling: touch;
+}
+
+.horizontal-scroll-container::-webkit-scrollbar {
+  display: none;
+}
+
+/* ── Reviews marquee ─────────────────────────────────────── */
+
+@keyframes reviews-marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.reviews-marquee {
+  animation: reviews-marquee 40s linear infinite;
+  will-change: transform;
+}
+
+.reviews-marquee:hover {
+  animation-play-state: paused;
+}
+
+@media (max-width: 640px) {
+  .reviews-marquee {
+    animation-duration: 30s;
+  }
+}
+
+/* ── Blog cards ───────────────────────────────────────────── */
+
+.blog-card {
+  cursor: pointer;
+  will-change: transform;
+}
+
+.blog-card-image {
+  will-change: transform;
+}
+
+.blog-card:hover .blog-card-image img {
+  opacity: 1;
+}
+
+/* ── Blog content typography ─────────────────────────────── */
+
+.blog-content p + p {
+  margin-top: 0;
+}
+
+.blog-content p:first-child::first-letter {
+  float: left;
+  font-size: 3.5rem;
+  line-height: 0.8;
+  padding-right: 0.5rem;
+  padding-top: 0.15rem;
+  font-weight: 800;
+  color: #b91c1c;
+  background: linear-gradient(135deg, #b91c1c, #ef4444);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
