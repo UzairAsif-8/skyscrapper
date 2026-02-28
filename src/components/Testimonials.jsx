@@ -7,7 +7,7 @@ const testimonials = [
     name: 'Michael Rivera',
     role: 'Homeowner, East Ridge',
     rating: 5,
-    text: '"Sky Scrapper treated our home like it was their own. The technician walked us through every option and left the space cleaner than he found it."',
+    text: '"Skyscraper treated our home like it was their own. The technician walked us through every option and left the space cleaner than he found it."',
     avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=80&h=80&fit=crop&crop=face&q=80',
   },
   {
@@ -21,21 +21,21 @@ const testimonials = [
     name: 'James Lee',
     role: 'Restaurant Owner',
     rating: 5,
-    text: '"We can\'t afford downtime. Sky Scrapper\'s commercial team is proactive, fast, and crystal clear in communication—exactly what we need."',
+    text: '"We can\'t afford downtime. Skyscraper\'s commercial team is proactive, fast, and crystal clear in communication—exactly what we need."',
     avatar: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=80&h=80&fit=crop&crop=face&q=80',
   },
   {
     name: 'Sarah Mitchell',
     role: 'Interior Designer',
     rating: 5,
-    text: '"I recommend Sky Scrapper to every client. They understand aesthetics matters—even when it comes to plumbing. Impeccable attention to detail."',
+    text: '"I recommend Skyscraper to every client. They understand aesthetics matters—even when it comes to plumbing. Impeccable attention to detail."',
     avatar: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=80&h=80&fit=crop&crop=face&q=80',
   },
   {
     name: 'Robert Chen',
     role: 'Commercial Property Owner',
     rating: 5,
-    text: '"Managing 12 units means constant maintenance. Sky Scrapper keeps everything running smoothly with transparent billing and zero surprises."',
+    text: '"Managing 12 units means constant maintenance. Skyscraper keeps everything running smoothly with transparent billing and zero surprises."',
     avatar: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=80&h=80&fit=crop&crop=face&q=80',
   },
 ]

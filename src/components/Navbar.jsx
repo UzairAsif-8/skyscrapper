@@ -48,18 +48,20 @@ export default function Navbar() {
             to="/"
             className="flex items-center gap-2 sm:gap-3 rounded-full px-1.5 py-1 transition-colors hover:bg-slate-50/60 min-w-0"
           >
-              <span className=" size-10 text-[10px] sm:text-sm font-bold"><img src="/logored.png" alt="Logo" /></span>
+            <span className="size-10 text-[10px] sm:text-sm font-bold">
+              <img src="/logored.png" alt="Logo" />
+            </span>
             <div className="flex flex-col min-w-0">
-              <span className="text-[11px] sm:text-[14px] font-bold tracking-tight text-slate-900 truncate leading-tight">
+              <span className="text-[14px] sm:text-[18px] font-bold tracking-tight text-slate-900 truncate leading-tight">
                 Skyscraper
               </span>
-              <span className="text-[8px] sm:text-[10px] font-medium text-slate-400 truncate leading-tight">
+              <span className="text-[10px] sm:text-[12px] font-medium text-slate-400 truncate leading-tight">
                 Plumbing & Heating
               </span>
             </div>
           </Link>
 
-          <nav className="hidden items-center gap-7 text-[13px] font-medium text-slate-600 md:flex">
+          <nav className="hidden items-center gap-7 text-[14px] sm:text-[16px] font-medium text-slate-600 md:flex">
             {navLinks.map((link) => (
               <NavLink
                 key={link.to}
@@ -105,7 +107,7 @@ export default function Navbar() {
         {open && (
           <div className="mt-1.5 md:hidden animate-fade-in">
             <div className="section-max-width rounded-2xl border border-slate-100/80 bg-white/95 backdrop-blur-xl px-3 py-3 shadow-xl">
-              <nav className="flex flex-col gap-0.5 text-[13px] font-medium text-slate-700">
+              <nav className="flex flex-col gap-0.5 text-[14px] font-medium text-slate-700">
                 {navLinks.map((link) => (
                   <NavLink
                     key={link.to}
@@ -123,7 +125,7 @@ export default function Navbar() {
                 ))}
                 <Link
                   to="/contact"
-                  className="mt-1.5 flex items-center justify-center rounded-xl bg-gradient-to-r from-brand-primary to-red-500 px-4 py-2.5 text-xs font-semibold text-white shadow-md"
+                  className="mt-1.5 flex items-center justify-center rounded-xl bg-gradient-to-r from-brand-primary to-red-500 px-4 py-2.5 text-[14px] font-semibold text-white shadow-md"
                 >
                   Request a Quote
                 </Link>

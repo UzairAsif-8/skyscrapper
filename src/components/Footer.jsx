@@ -10,6 +10,17 @@ const socialLinks = [
   { icon: FiLinkedin, href: '#', label: 'LinkedIn' },
 ]
 
+const footerServices = [
+  { name: 'Drain Cleaning', id: 'drain-cleaning' },
+  { name: 'Leak Repair', id: 'leak-repair' },
+  { name: 'Water Heaters', id: 'water-heater-installation' },
+  { name: 'Pipe Repair', id: 'pipe-repair' },
+  { name: 'Toilet Installation', id: 'toilet-installation' },
+  { name: 'Fixture Installation', id: 'fixture-installation' },
+  { name: 'Sewer Line Repair', id: 'sewer-line-repair' },
+  { name: 'Water Filtration', id: 'water-filtration' },
+]
+
 function Footer() {
   return (
     <footer className="relative mt-16 overflow-hidden bg-gradient-to-br from-brand-primaryDark via-slate-900 to-slate-950 text-slate-100">
@@ -27,7 +38,7 @@ function Footer() {
                   <img src="/LogoWhite.png" alt="Sky Scrapper" className="h-full w-full object-contain" />
                 </span>
                 <div className="flex flex-col min-w-0">
-                  <span className="text-sm font-bold tracking-tight text-white">Sky Scrapper</span>
+                  <span className="text-sm font-bold tracking-tight text-white">Skyscraper</span>
                   <span className="text-[11px] text-slate-400">Plumbing & Heating</span>
                 </div>
               </div>
@@ -70,14 +81,16 @@ function Footer() {
                 Services
               </h3>
               <ul className="space-y-1.5 text-sm text-slate-400 sm:space-y-2.5">
-                <li>Drain Cleaning</li>
-                <li>Leak Repair</li>
-                <li>Water Heaters</li>
-                <li>Pipe Repair</li>
-                <li>Toilet Installation</li>
-                <li>Fixture Installation</li>
-                <li>Sewer Line Repair</li>
-                <li>Water Filtration</li>
+                {footerServices.map((service) => (
+                  <li key={service.id}>
+                    <Link
+                      to={`/services/${service.id}`}
+                      className="inline-block py-2 text-slate-400 transition-colors duration-200 hover:text-white focus:outline-none focus:ring-2 focus:ring-red-400 focus:ring-offset-2 focus:ring-offset-slate-900 rounded"
+                    >
+                      {service.name}
+                    </Link>
+                  </li>
+                ))}
               </ul>
             </div>
 
@@ -126,7 +139,7 @@ function Footer() {
           {/* Bottom bar */}
           <div className="relative z-10 mt-10 flex flex-col items-center gap-4 border-t border-slate-800/60 pt-6 text-center sm:mt-12 sm:flex-row sm:justify-between sm:text-left">
             <p className="text-[11px] text-slate-500 order-2 sm:order-1">
-              &copy; {year} Skyscrapaper Plumbing &amp; Heating. All rights reserved.
+              &copy; {year} Sky Scrapper Plumbing &amp; Heating. All rights reserved.
             </p>
             <div className="flex flex-wrap items-center justify-center gap-4 order-1 sm:order-2 sm:gap-6">
               <Link
