@@ -23,7 +23,7 @@ export default function PrivacyPolicy() {
           <div className="prose prose-slate prose-lg max-w-none">
             <h2 className="text-xl font-semibold text-slate-900 mt-8 mb-3">1. Introduction</h2>
             <p className="text-slate-600 leading-relaxed">
-              Sky Scrapper Plumbing & Heating (&quot;we,&quot; &quot;our,&quot; or &quot;us&quot;) is committed to protecting your privacy.
+              Skyscraper Plumbing & Heating (&quot;we,&quot; &quot;our,&quot; or &quot;us&quot;) is committed to protecting your privacy.
               This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website or use our services.
             </p>
 

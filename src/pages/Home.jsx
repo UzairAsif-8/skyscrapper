@@ -53,7 +53,7 @@ export default function Home() {
                 className="animate-fade-in-up max-w-lg text-sm leading-relaxed text-slate-600 sm:text-base lg:text-lg"
                 style={{ animationDelay: '0.2s' }}
               >
-                Sky Scrapper brings agency-level polish to essential plumbing &amp; heating work — fast response,
+                Skyscraper brings agency-level polish to essential plumbing &amp; heating work — fast response,
                 quiet craftsmanship, and transparent pricing for homeowners and businesses
                 who care about the details.
               </p>

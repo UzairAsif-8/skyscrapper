@@ -23,13 +23,13 @@ export default function TermsOfService() {
           <div className="prose prose-slate prose-lg max-w-none">
             <h2 className="text-xl font-semibold text-slate-900 mt-8 mb-3">1. Agreement to Terms</h2>
             <p className="text-slate-600 leading-relaxed">
-              By accessing or using the Sky Scrapper Plumbing & Heating website and services, you agree to be bound by these Terms of Service.
+              By accessing or using the Skyscraper Plumbing & Heating website and services, you agree to be bound by these Terms of Service.
               If you do not agree, please do not use our website or services.
             </p>
 
             <h2 className="text-xl font-semibold text-slate-900 mt-8 mb-3">2. Services</h2>
             <p className="text-slate-600 leading-relaxed">
-              Sky Scrapper provides plumbing and heating services as described on our website. We reserve the right to modify, suspend, or discontinue any service at any time.
+              Skyscraper provides plumbing and heating services as described on our website. We reserve the right to modify, suspend, or discontinue any service at any time.
               Quotes and estimates are valid for the period stated and may be subject to change after inspection.
             </p>
 
@@ -53,13 +53,13 @@ export default function TermsOfService() {
 
             <h2 className="text-xl font-semibold text-slate-900 mt-8 mb-3">6. Intellectual Property</h2>
             <p className="text-slate-600 leading-relaxed">
-              All content on this website, including text, graphics, logos, and images, is the property of Sky Scrapper or its licensors and is protected by applicable intellectual property laws.
+              All content on this website, including text, graphics, logos, and images, is the property of Skyscraper or its licensors and is protected by applicable intellectual property laws.
               You may not reproduce, distribute, or use our content without prior written permission.
             </p>
 
             <h2 className="text-xl font-semibold text-slate-900 mt-8 mb-3">7. Governing Law</h2>
             <p className="text-slate-600 leading-relaxed">
-              These Terms are governed by the laws of the jurisdiction in which Sky Scrapper operates. Any disputes shall be resolved in the courts of that jurisdiction.
+              These Terms are governed by the laws of the jurisdiction in which Skyscraper operates. Any disputes shall be resolved in the courts of that jurisdiction.
             </p>
 
             <h2 className="text-xl font-semibold text-slate-900 mt-8 mb-3">8. Contact</h2>

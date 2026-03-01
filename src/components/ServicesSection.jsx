@@ -17,7 +17,7 @@ function ServicesSection() {
               Premium plumbing services designed for modern homes & businesses.
             </h2>
             <p className="text-sm sm:text-base leading-relaxed text-slate-600">
-              From rapid response to long-term system upgrades, Sky Scrapper delivers
+              From rapid response to long-term system upgrades, Skyscraper delivers
               immaculate work that feels as thoughtful as it looks.
             </p>
           </div>

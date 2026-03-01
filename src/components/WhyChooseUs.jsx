@@ -48,7 +48,7 @@ function WhyChooseUs() {
     <section className="section-padding">
       <div ref={ref} className="reveal section-max-width space-y-12">
         <div className="max-w-2xl space-y-3">
-          <span className="badge-soft">Why homeowners trust Sky Scrapper</span>
+          <span className="badge-soft">Why homeowners trust Skyscraper</span>
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold tracking-tight text-slate-900">
             Built like a premium service brand, operated like a trusted neighbor.
           </h2>

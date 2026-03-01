@@ -25,7 +25,7 @@ export default function Services() {
               </span>
             </h1>
             <p className="text-base leading-relaxed text-slate-600">
-              From quick fixes to full-scale projects, Sky Scrapper offers a meticulously designed
+              From quick fixes to full-scale projects, Skyscraper offers a meticulously designed
               service stack for homeowners, property managers, and commercial operators.
             </p>
           </div>

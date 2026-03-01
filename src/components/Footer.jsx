@@ -35,7 +35,7 @@ function Footer() {
             <div className="space-y-4 sm:space-y-5">
               <div className="flex items-center gap-3">
                 <span className="flex h-10 w-10 shrink-0 items-center justify-center text-[10px] font-bold sm:text-sm">
-                  <img src="/LogoWhite.png" alt="Sky Scrapper" className="h-full w-full object-contain" />
+                  <img src="/LogoWhite.png" alt="Skyscraper" className="h-full w-full object-contain" />
                 </span>
                 <div className="flex flex-col min-w-0">
                   <span className="text-sm font-bold tracking-tight text-white">Skyscraper</span>
@@ -103,7 +103,7 @@ function Footer() {
                 <a
                   href="tel:+17787237740"
                   className="flex items-center gap-2.5 py-2 text-sm font-semibold text-red-200 transition-colors hover:text-white focus:outline-none focus:ring-2 focus:ring-red-400 focus:ring-offset-2 focus:ring-offset-slate-900 rounded min-h-[44px]"
-                  aria-label="Call Sky Scrapper"
+                  aria-label="Call Skyscraper"
                 >
                   <FiPhoneCall className="shrink-0 text-base text-emerald-300" />
                   <span>+1 (778) 723-7740</span>
@@ -111,7 +111,7 @@ function Footer() {
                 <a
                   href="mailto:skyscraper.deve@gmail.com"
                   className="flex items-start gap-2.5 py-2 min-w-0 focus:outline-none focus:ring-2 focus:ring-red-400 focus:ring-offset-2 focus:ring-offset-slate-900 rounded"
-                  aria-label="Email Sky Scrapper"
+                  aria-label="Email Skyscraper"
                 >
                   <FiMail className="mt-0.5 shrink-0 text-base text-red-300" />
                   <span className="break-all text-sm">skyscraper.deve@gmail.com</span>
@@ -139,7 +139,7 @@ function Footer() {
           {/* Bottom bar */}
           <div className="relative z-10 mt-10 flex flex-col items-center gap-4 border-t border-slate-800/60 pt-6 text-center sm:mt-12 sm:flex-row sm:justify-between sm:text-left">
             <p className="text-[11px] text-slate-500 order-2 sm:order-1">
-              &copy; {year} Sky Scrapper Plumbing &amp; Heating. All rights reserved.
+              &copy; {year} Skyscraper Plumbing &amp; Heating. All rights reserved.
             </p>
             <div className="flex flex-wrap items-center justify-center gap-4 order-1 sm:order-2 sm:gap-6">
               <Link

@@ -18,14 +18,14 @@ export default function About() {
           <div className="animate-fade-in relative mb-10 overflow-hidden rounded-3xl shadow-brand-xl">
             <img
               src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?w=1200&q=80"
-              alt="Sky Scrapper Plumbing and Heating team"
+              alt="Skyscraper Plumbing and Heating team"
               loading="lazy"
               decoding="async"
               className="h-56 w-full object-cover sm:h-64 lg:h-72"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-slate-900/70 via-slate-900/20 to-transparent" />
             <div className="absolute bottom-0 left-0 p-6 sm:p-8">
-              <span className="badge-soft mb-2 bg-white/20 text-white ring-white/20 backdrop-blur-sm">About Sky Scrapper</span>
+              <span className="badge-soft mb-2 bg-white/20 text-white ring-white/20 backdrop-blur-sm">About Skyscraper</span>
               <h1 className="mt-2 text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold tracking-tight text-white leading-[1.1]">
                 A modern plumbing company built on old-school craftsmanship.
               </h1>
@@ -35,7 +35,7 @@ export default function About() {
           <div className="grid gap-10 lg:grid-cols-[minmax(0,1.2fr)_minmax(0,1fr)] lg:items-start">
             <div className="animate-fade-in-up space-y-5">
               <p className="text-base leading-relaxed text-slate-700">
-                Sky Scrapper was founded by technicians who were tired of rushed appointments, vague
+                Skyscraper was founded by technicians who were tired of rushed appointments, vague
                 pricing, and messy projects. We set out to create a premium, detail-obsessed
                 plumbing experience — one that feels more like working with a design studio than a
                 typical trade contractor.
