@@ -33,7 +33,7 @@ export default function Home() {
                   <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-75" />
                   <span className="relative inline-flex h-2 w-2 rounded-full bg-emerald-500" />
                 </span>
-                <span>Licensed experts · Trusted across the metro</span>
+                <span>Licensed experts · Trusted across Calgary & Surrounding Cities</span>
               </div>
 
               {/* Headline with animated gradient */}

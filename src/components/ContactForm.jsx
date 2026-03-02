@@ -25,6 +25,7 @@ const serviceOptions = [
   'Water Filtration Systems',
   'Fixture Installation',
   'Maintenance Services',
+  'Others',
 ]
 
 export default function ContactForm({ compact = false }) {
@@ -145,7 +146,7 @@ export default function ContactForm({ compact = false }) {
           disabled={submitting}
           className="btn-glow ripple-button inline-flex items-center gap-2 text-sm disabled:cursor-not-allowed disabled:opacity-70"
         >
-          <FiSend className="text-xl" />
+          <FiSend className={compact ? 'text-xl' : 'text-[1.425rem] shrink-0'} />
           <span>{submitting ? 'Sending request…' : 'Submit request'}</span>
         </button>
         <p className="text-[11px] text-slate-400">

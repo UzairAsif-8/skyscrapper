@@ -46,7 +46,7 @@ export default function Contact() {
                 <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-gradient-to-br from-red-500 to-red-400 text-white shadow-md">
                   <FiMapPin className="text-sm" />
                 </div>
-                <span>Serving Greater Metro Area & Surrounding Cities</span>
+                <span>Serving Calgary & Surrounding Cities</span>
               </div>
             </div>
           </div>

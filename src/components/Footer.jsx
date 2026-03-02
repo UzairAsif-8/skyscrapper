@@ -118,7 +118,7 @@ function Footer() {
                 </a>
                 <div className="flex items-start gap-2.5 py-2">
                   <FiMapPin className="mt-0.5 shrink-0 text-base text-red-300" />
-                  <span className="text-sm">Serving Greater Metro Area &amp; Surrounding Cities</span>
+                  <span className="text-sm">Serving Calgary &amp; Surrounding Cities</span>
                 </div>
               </div>
               <div className="flex items-center gap-2 pt-1">
@@ -157,7 +157,15 @@ function Footer() {
             </div>
           </div>
           <p className="relative z-10 mt-4 pt-2 text-center text-[11px] text-slate-500 sm:text-left">
-            Crafted by Axiolink Systems (Pvt) Ltd
+            Crafted by{' '}
+              <a
+                href="https://www.axiolinksystems.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-slate-500 transition-colors hover:text-slate-300 focus:outline-none focus:ring-2 focus:ring-red-400 focus:ring-offset-2 focus:ring-offset-slate-900 rounded"
+              >
+                Axiolink Systems (Pvt) Ltd
+              </a>
           </p>
         </div>
       </div>
