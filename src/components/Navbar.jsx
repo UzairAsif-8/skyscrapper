@@ -55,7 +55,7 @@ export default function Navbar() {
               <span className="text-[14px] sm:text-[18px] font-bold tracking-tight text-slate-900 truncate leading-tight">
                 Skyscraper
               </span>
-              <span className="text-[10px] sm:text-[12px] font-medium text-slate-400 truncate leading-tight">
+              <span className="text-[10px] sm:text-[12px] font-medium text-slate-600 truncate leading-tight">
                 Plumbing & Heating
               </span>
             </div>

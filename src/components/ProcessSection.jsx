@@ -54,11 +54,11 @@ function ProcessSection() {
                 <div className="flex items-center gap-3">
                   <div className="relative flex h-11 w-11 items-center justify-center rounded-2xl bg-gradient-to-br from-red-500 to-red-400 text-white shadow-lg shadow-red-500/30 transition-transform duration-300 group-hover:scale-110">
                     <step.icon className="text-lg" />
-                    <span className="absolute -right-1 -top-1 flex h-5 w-5 items-center justify-center rounded-full bg-white text-[10px] font-bold text-slate-700 shadow-md ring-1 ring-slate-100">
+                    <span className="absolute -right-1 -top-1 flex h-7 w-7 items-center justify-center rounded-full bg-white text-sm font-bold text-slate-700 shadow-md ring-1 ring-slate-100">
                       {index + 1}
                     </span>
                   </div>
-                  <span className="text-[11px] font-semibold uppercase tracking-[0.22em] text-slate-400">
+                  <span className="text-base font-semibold uppercase tracking-[0.22em] text-slate-400">
                     {step.step}
                   </span>
                 </div>

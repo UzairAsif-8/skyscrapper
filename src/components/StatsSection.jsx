@@ -75,9 +75,9 @@ function StatsSection() {
                 className="group flex flex-col items-start rounded-2xl border border-slate-100/60 bg-gradient-to-br from-slate-50/80 to-white/50 px-5 py-4 text-left shadow-sm transition-[transform,box-shadow] duration-300 hover:-translate-y-1 hover:shadow-md"
               >
                 <div
-                  className={`mb-3 inline-flex items-center rounded-full bg-gradient-to-r ${stat.gradient} px-3 py-1.5 text-sm font-bold text-slate-900 shadow-md`}
+                  className={`mb-3 inline-flex items-center rounded-full bg-gradient-to-r ${stat.gradient} px-3 py-1.5 font-bold text-slate-900 shadow-md`}
                 >
-                  <span>
+                  <span className="text-lg sm:text-xl">
                     {values[index].toLocaleString()}
                     {stat.suffix}
                   </span>
